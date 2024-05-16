@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="keywords" content="chrome, extension, Email, Email domain, search, extraxt, csv, txt, download, copy">
+    <meta name="description" content="Email Scraper Chrome extension automates the extraction of email addresses from web pages.">
+    <title>Email Scraper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/scripts/utils.js"></script>
+    <script src="/scripts/common.js"></script>
+    <script src="/scripts/popup.js"></script>
+    <style>
+        .fa-search {
+            color: #4285F4;
+        }
+
+        body {
+            background: linear-gradient(to right, #fbffff, #bbd1fb);
+            background: -webkit-linear-gradient(to right, #41D8DD, #5583EE);
+            background: -moz-linear-gradient(to right, #41D8DD, #5583EE);
+            background: -o-linear-gradient(to right, #41D8DD, #5583EE);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="modal-header">
+        <h1 class="logo" style="font-family: Arial Black, sans-serif;">
+            <a title="About Email Extractor" target="_blank">
+                <img class="logo-icon" src="/assets/images/Prabisha logo.png">
+            </a>Email Scraper
+        </h1>
+        <div class="statistics">
+            <div class="email" title="Emails">
+                <div id="emailsUniqueCount"></div><i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <div class="email-domain" title="Emails Domains">
+                <div id="emailsDomainsUniqueCount"></div><i class="fa fa-globe" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="modal-content" id="result">
+        <div class="results">
+        </div>
+    </div>
+    <div class="modal-icons">
+        <div class="flex-container">
+            <div class="flex">
+                <div title="Refresh search" id="refrech-result">
+                    <i class="fa fa-refresh" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="flex">
+                <div title="Copy" id="copy" href="">
+                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="flex">
+                <div title="Download Csv" id="download-csv">
+                    <i class="fa fa-file-excel-o" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="flex">
+                <div title="Download Txt" id="download-txt">
+                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="flex">
+                <div title="Send Email" id="send-email">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
